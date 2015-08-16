@@ -1,0 +1,25 @@
+<template name="entidadListItem">
+
+	<div class="media entidad-{{id}}">
+		<div class="media-left">
+			<a href="/entidad/{{_id}}">
+			  <img class="media-object" src="{{img}}" alt="fake">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+			{{titulo}}
+			{{#if code}}
+				<div class="badge">
+					Code: 
+					{{#each code}}
+						{{> tipoListItem}}
+			    	{{/each}}
+				</div>
+			{{/if}}
+			</h4>
+			<p>{{texto}}</p>
+		</div>
+	</div>	
+</template>
+

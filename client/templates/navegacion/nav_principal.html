@@ -1,0 +1,29 @@
+<template name="navigation">
+	<nav class="navbar navbar-default " role="navigation">
+		<div class="container-fluid">
+		    <div class="navbar-header">
+		    	<a href="/" class="navbar-brand ">
+		      		<span class="glyphicon glyphicon-grain " aria-hidden="true"></span> Maat System
+
+		    	</a>
+		    </div>
+
+	        <ul class="nav navbar-nav">
+	            <li >
+	            	<a href="/qrscanner">
+	      				<span class="glyphicon  glyphicon-qrcode " aria-hidden="true"></span> QR
+	      			</a>
+	      		</li>
+	        </ul>
+
+	        <ul class="nav navbar-nav navbar-right">
+	      		<li><a href="#">
+	      				<span class="glyphicon  glyphicon-cog " aria-hidden="true"></span> Config
+	      			</a>
+	      		</li>
+	            {{> loginButtons}} <!-- here -->
+	        </ul>
+		    
+  		</div>
+	</nav>
+</template>
