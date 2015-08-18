@@ -24,5 +24,6 @@ Template.listadoEntidades.helpers({
   entidades: function(){
     return entidades.find();
   }
+
 });
 
